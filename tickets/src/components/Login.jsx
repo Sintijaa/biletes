@@ -3,7 +3,7 @@ import '../style/Login.css';
 
 function Login() {
   const [action, setAction] = useState("SignUp");
-
+  
   return (
     <div className='container'>
       <div className="header">
@@ -20,7 +20,7 @@ function Login() {
           <input type="email" placeholder="Email" />
         </div>
         <div className="input">
-          <input type="password" placeholder="password" />
+          <input type="password" placeholder="Password" />
         </div>
         
       </div>
