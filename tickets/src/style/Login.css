@@ -11,14 +11,14 @@
     padding-bottom: 30px;
 
 }
-.header{
+/* .header{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
     width: 100px;
     margin-top: 30px;
-}
+} */
 .text{
     display: flex;
     align-items: center;
