@@ -3,8 +3,8 @@ import '../style/Login.css';
 
 function Login() {
   const [action, setAction] = useState("SignUp");
-  
   return (
+    
     <div className='container'>
       <div className="header">
         <div className="text">{action}</div>
