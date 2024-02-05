@@ -6,14 +6,14 @@ body {
     margin-bottom: 1em;
   }
   
-  input[type="text"], input[type="date"] {
+  #calendarInput[type="text"], #calendarInput[type="date"] {
     display: block;
     margin-bottom: 1em;
     padding: 0.5em;
     font-size: 1em;
   }
   
-  button {
+  #calendarButton {
     padding: 0.5em 1em;
     font-size: 1em;
     background-color: #007BFF;
@@ -23,7 +23,7 @@ body {
     cursor: pointer;
   }
   
-  button:hover {
+  #calendarButton:hover {
     background-color: #0056b3;
   }
   
