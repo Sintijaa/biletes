@@ -18,7 +18,7 @@ function Home() {
         <h1>TicektsBuy</h1>
         <button class="myButton" onClick={navigateToCalendar}>Notikumu kalendārs</button>
         <button class="myButton" onClick={navigateToLogin}>Ieej portālā</button>
-        {/* <a href="#about">About</a> */}
+        { <a href="#about">About</a> }
       </div>
     </div>    
   );
