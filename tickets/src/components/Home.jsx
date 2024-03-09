@@ -12,13 +12,18 @@ function Home() {
   const navigateToCalendar = () => {
     window.location.href = "/calendar"; 
   };
+  const navigateToAbout = () => {
+    window.location.href = "/about"; 
+  };
+  
   return (
      <div className='linija'>
       <div class="header-right">
         <h1>TicektsBuy</h1>
         <button class="myButton" onClick={navigateToCalendar}>Notikumu kalendārs</button>
         <button class="myButton" onClick={navigateToLogin}>Ieej portālā</button>
-        { <a href="#about">About</a> }
+        <button class="myButton" onClick={navigateToAbout}>About</button>
+        {/* { <a href="#about">About</a> } */}
       </div>
     </div>    
   );

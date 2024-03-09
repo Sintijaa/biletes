@@ -20,6 +20,13 @@ body {
     line-height: 25px;
     border-radius: 4px;
   }
+  .h1{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+  }
   
   .header a:hover {
     background-color: #ddd;
