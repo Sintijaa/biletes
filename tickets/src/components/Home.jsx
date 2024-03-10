@@ -15,6 +15,9 @@ function Home() {
   const navigateToAbout = () => {
     window.location.href = "/about"; 
   };
+  const navigateToPievienot = () => {
+    window.location.href = "/pievienot"; 
+  };
   
   return (
      <div className='linija'>
@@ -23,6 +26,7 @@ function Home() {
         <button class="myButton" onClick={navigateToCalendar}>Notikumu kalendārs</button>
         <button class="myButton" onClick={navigateToLogin}>Ieej portālā</button>
         <button class="myButton" onClick={navigateToAbout}>About</button>
+        <button class="myButton" onClick={navigateToPievienot}>Pievienot pasākumu</button>
         {/* { <a href="#about">About</a> } */}
       </div>
     </div>    

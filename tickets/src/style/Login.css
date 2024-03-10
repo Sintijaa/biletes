@@ -8,7 +8,7 @@
     padding-top: 100px;
     max-width: 580px;
     height: 680px;
-    background: #fff;
+    background: #574e4f;;
     box-shadow: 0px 4px 8px 0px rgba(230, 226, 226, 0.2);
     border-radius: 20px;
 
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3c009d;
+    color: #fff;
     font-size: 55px;
     font-weight: 300;
    
@@ -58,7 +58,7 @@
     font-size: 18px;
 }
 .forgot-password span{
-    color: #3c009d;
+    color: #272629;
     cursor: pointer;
 }
 .submit-conatiner{
@@ -73,7 +73,7 @@
     width: 220px;
     height: 59px;
     color: #fff;
-    background: #3c009d;
+    background: #655e70;
     border-radius:50px ;
     font-size: 19px;
     font-weight: 700;

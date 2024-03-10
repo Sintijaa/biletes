@@ -1,0 +1,15 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    color: #d3b3b3;
+}
+p {
+    text-align: justify;
+    color: #e9dfdf;
+}
+body {
+    font-family: Arial, sans-serif;
+}
