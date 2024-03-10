@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import '../style/pievienot.css';
 
-function EventForm() {
+
+function EventForm({ addEventToCart }) {
   const [event, setEvent] = useState({ location: '', time: '', price: '', image: '' });
 
   const handleChange = (e) => {
@@ -9,7 +11,8 @@ function EventForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(event);
+    addEventToCart(event);
+    setEvent({ location: '', time: '', price: '', image: '' });
   };
 
   return (
@@ -35,4 +38,43 @@ function EventForm() {
   );
 }
 
-export default EventForm;
+function Cart({ cart, purchase }) {
+  return (
+    <div>
+      <h2>Grozs</h2>
+      {cart.map((event, index) => (
+        <div key={index}>
+          <h3>{event.location}</h3>
+          <p>{event.time}</p>
+          <p>{event.price}</p>
+          <img src={event.image} alt="event" />
+        </div>
+      ))}
+      <button onClick={purchase}>Iegādāties</button>
+    </div>
+  );
+}
+
+function App() {
+  const [cart, setCart] = useState([]);
+
+  const addEventToCart = (event) => {
+    setCart([...cart, event]);
+  };
+
+  const purchase = () => {
+    console.log('Pasākumi iegādāti:', cart);
+    setCart([]);
+  };
+
+  return (
+    <div>
+      <EventForm addEventToCart={addEventToCart} />
+      <Cart cart={cart} purchase={purchase} />
+    </div>
+  );
+}
+
+export default App;
+
+

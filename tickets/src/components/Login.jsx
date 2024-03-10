@@ -13,7 +13,7 @@ function Login() {
       <div className="inputs">
       {action === "SignUp" ? (
   <div className="input">
-    <input placeholder="text" type="text" />
+  
   </div>
 ) : null}   
         <div className="input">
